@@ -1,0 +1,16 @@
+
+<html>
+
+<head>LIST OF TeamLeads</head>
+<br><br>
+
+
+<% if !@result.nil? %>
+
+<% @result.each do|record| %>
+  <%=record%>
+  <%= link_to "Team Details",:controller => "employee",:action => "team_details" , :name => record %>    </td>
+<br>
+   <%end%>
+  <%end%>
+</html>

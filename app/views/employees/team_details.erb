@@ -1,0 +1,19 @@
+
+<html>
+
+<head b>Details of the  Team</head>
+<br><br><br>
+<% if !@res.nil? %>
+<% @res.each do|record| %>
+
+  Name : <%=record[:name] %> <br>
+  Age : <%=record[:age] %> <br>
+  Designation : <%=record[:designation] %> <br>
+  date_of_joining :  <%=record[:date_of_joining] %> <br>
+  skills : <%=record[:skills] %> <br>
+  Team Lead : <%=record[:team_lead]%> <br>
+  Current Project : <%=record[:current_project]%> <br>
+<br><br><br>
+  <%end%>
+  <%end%>
+</html>

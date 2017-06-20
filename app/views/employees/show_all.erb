@@ -1,0 +1,16 @@
+
+<html>
+
+<head>LIST OF EMPLOYEES</head>
+<br><br>
+
+<h4> <%= link_to "Add New Employee" ,:controller => "employee", :action =>"new"%> </h4>
+<% if !@result.nil? %>
+
+<% @result.each do|record| %>
+  <%=record[:name] %>
+  <%= link_to "details",:controller => "employee",:action => "details" , :id => record[:id] %>    </td>
+<br>
+   <%end%>
+  <%end%>
+</html>

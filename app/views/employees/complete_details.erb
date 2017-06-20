@@ -1,0 +1,19 @@
+
+<html>
+
+<head>Details of the EMPLOYEE</head>
+<br>
+<% if !@res.nil? %>
+
+
+  Name : <%=@res[:name] %> <br>
+  Age : <%=@res[:age] %> <br>
+  Designation : <%=@res[:designation] %> <br>
+  date_of_joining :  <%=@res[:date_of_joining] %> <br>
+  skills : <%=@res[:skills] %> <br>
+  Team Lead : <%=@res[:team_lead]%> <br>
+  Current Project : <%=@res[:current_project]%> <br>
+<br>
+  
+  <%end%>
+</html>

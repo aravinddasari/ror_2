@@ -1,0 +1,12 @@
+<h2 class='center'>Add New Employee</h2> 
+<%= form_tag({:controller => "employee", :action => "create"}, multipart: true) do %>
+      Name:&nbsp;&nbsp; <%= text_field_tag :name, '',:class=>"required" ,:placeholder => "Ex: Ram"%> <br>
+      Age:&nbsp;&nbsp; <%= text_field_tag :age, '',:class=>"required" ,:placeholder => "Ex: 25"%> <br>
+      Date_of_joining:&nbsp;&nbsp; <%= text_field_tag :date_of_joining, '',:class=>"required" ,:placeholder => "Ex: 2017-05-31"%> <br>
+      Designation:&nbsp;&nbsp; <%= text_field_tag :designation, '',:class=>"required" ,:placeholder => "Ex: SDE"%> <br>
+      Team Lead:&nbsp;&nbsp; <%= text_field_tag :team_lead, '',:class=>"required" ,:placeholder => "Ex: ram" %> <br>
+      Current Project:&nbsp;&nbsp; <%= text_field_tag :current_project, '',:class=>"required" ,:placeholder => "Ex: tribelocal" %> <br>
+      Skills:&nbsp;&nbsp; <%= text_field_tag :skills, '',:class=>"required" ,:placeholder => "Ex: 5"%> <br>
+
+    &nbsp;&nbsp;<%= submit_tag 'Submit', :class => 'btn btn-primary', data: {disable_with: "Submitting..."} %>
+<% end %>
